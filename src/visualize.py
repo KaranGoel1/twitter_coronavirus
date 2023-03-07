@@ -30,13 +30,17 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+
+'''    
 df = pd.DataFrame(columns = ['labels', 'values'])
 labels = [item[0] for item in items[:10]]
 values = [item[1] for item in items[:10]]
 df['labels'] = labels
 df['values'] = values
 df_sorted = df.sort_values('values')
+'''
+labels = [item[0] for item in items[:10]]
+values = [item[1] for item in items[:10]]
 
-
-plt.bar('labels', 'values', data=df_sorted)
+plt.bar(labels, sorted(values))
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
