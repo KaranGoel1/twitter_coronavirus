@@ -42,5 +42,5 @@ df_sorted = df.sort_values('values')
 labels = [item[0] for item in items[:10]]
 values = [item[1] for item in items[:10]]
 
-plt.bar(labels, sorted(values))
+plt.bar(labels, values)
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
