@@ -38,12 +38,12 @@ labels = [item[0] for item in items[:10]]
 values = [item[1] for item in items[:10]]
 df['labels'] = labels
 df['values'] = values
-'''
-df_sorted = df.sort_values('values')
 
+df_sorted = df.sort_values('values')
 '''
+
 labels = [item[0] for item in items[:10]]
 values = [item[1] for item in items[:10]]
-'''
-plt.bar('labels', 'values', data=df_sorted)
+
+plt.bar([item[0] for item in items[:10]], [item[1] for item in items[:10]])
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
