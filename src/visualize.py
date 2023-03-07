@@ -30,5 +30,5 @@ items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), rev
 for k,v in items:
     print(k,':',v)
 
-plt.bar([item[0] for item in items[:10]], [item[1] for item in items[:10]])
+plt.bar([item[0] for item in items[:10]], [item[1] for item in items[:10]].sort())
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
