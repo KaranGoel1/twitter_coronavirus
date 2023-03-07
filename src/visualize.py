@@ -37,5 +37,6 @@ df['labels'] = labels
 df['values'] = values
 df_sorted = df.sort_values('values')
 
+
 plt.bar('labels', 'values', data=df_sorted)
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
