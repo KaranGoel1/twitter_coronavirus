@@ -15,6 +15,7 @@ from collections import Counter,defaultdict
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # open the input path
 with open(args.input_path) as f:
@@ -29,6 +30,12 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+df = pd.DataFrame(columns = ['labels', 'values'])
+labels = [item[0] for item in items[:10]]
+values = [item[1] for item in items[:10]]
+df['labels'] = labels
+df['values'] = values
+df_sorted = df.sort_values('values')
 
-plt.bar([item[0] for item in items[:10]], [item[1] for item in items[:10]].sort())
+plt.bar('labels', 'values', data=df_sorted)
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
