@@ -2,7 +2,7 @@
 
 ##Graph analysis
 
-![coronavirus by language](#coronavirus_lang.png)
+![coronavirus by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_country.png)
 
 ![coronavirus by country](#coronavirus_country.png)
 
