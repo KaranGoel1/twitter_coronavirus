@@ -36,7 +36,11 @@ df = pd.DataFrame({'labels': [item[0] for item in items[:10]], 'values': [item[1
 df_sorted = df.sort_values('values')
 
 plt.bar('labels', 'values', data=df_sorted)
-plt.xlabel(args.input_path[8:])
+if args.input_path[8:] == 'lang':
+    plt.xlabel('language')
+    plt.title(f'Tweet count with {args.key} by language')
+else:
+    plt.xlabel(args.input_path[8:])
+    plt.title(f'Tweet count with {args.key} by {args.input_path[8:]}')
 plt.ylabel('count')
-plt.title(f'num tweets with {args.key} by {args.input_path[8:]}')
 plt.savefig(f'{args.key}_{args.input_path[8:]}.png')
