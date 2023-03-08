@@ -1,14 +1,23 @@
 # Coronavirus twitter analysis
 
-##Graph analysis
+For this project, I used mapreduce algorithms to aggregate the number of tweets sent with certain hashtags by the countries and languages the were sent in/from. The data was geolocated tweets sent in 2020. Once the data was reduced into their country and language specific files respectively, I generated country and language graphs for two of the hashtags. Below are the results.
+## Graph analysis
 
 ![coronavirus by country](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_country.png)
 
+The above graph shows the frequency of the hashtag #coronavirus by the country in which the tweet originated from. The results aren't too surprising, with the US having the most tweets with that hashtag by some margin. With India and Great Britain being the two next largest English speaking countries, its no surprise they are the next largest. The other countries still have large English speaking populations and relatively widespread access to the internet so it is not surprising to see them up there.   
+
 ![coronavirus by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_lang.png)
+
+This graph shows the frequency of the same hashtag, but this time dependent on the language that the tweet is written in. English having the highest count is no surprise since the hashtag is in English. Spanish is one of the most widely spoken languages, so it seems reasonable that some of them would have an English hashtag. There seem to be quite a few undefined languages with the hashtag.
 
 ![코로나바이러스 by country](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23코로나바이러스_country.png)
 
+This graph shows this Korean hashtag frequency based on country of origin. Korea having the highest frequency is no surprise of course. However, it is surprising to see Uzbekistan on this graph, as it isn't typically associated with Korea or Koreans. The other countries are known for having significant immigrant populations so they aren't as surprising. What's interesting is that this indicates that Koreans either do not immigrate much, or begin speaking a different language more once they immigrate. 
+
 ![코로나바이러스 by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23코로나바이러스_lang.png)
+
+This graph looks at the frequency of the same hashtag as above, but on the language of the tweet. Of course, Korean will be the most popular language for the hashtag to be in. English, being the most widely spoken language, is also likely to have hashtags of other languages within it. This graph is heavily skewed toward Korean.
 
 You will scan all geotagged tweets sent in 2020 to monitor for the spread of the coronavirus on social media.
 
