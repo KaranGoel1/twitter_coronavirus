@@ -2,9 +2,13 @@
 
 ##Graph analysis
 
-![coronavirus by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_country.png)
+![coronavirus by country](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_country.png)
 
-![coronavirus by country](#coronavirus_country.png)
+![coronavirus by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23coronavirus_lang.png)
+
+![코로나바이러스 by country](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23코로나바이러스_country.png)
+
+![코로나바이러스 by language](https://github.com/KaranGoel1/twitter_coronavirus/blob/master/%23코로나바이러스_lang.png)
 
 You will scan all geotagged tweets sent in 2020 to monitor for the spread of the coronavirus on social media.
 
